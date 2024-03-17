@@ -1,7 +1,7 @@
 -- Wiew all records in the dataset
 SELECT * FROM kickstarter;
 
--- QUESTION 1: What are the top 10 most funded projects from 2010 - 2018
+-- QUESTION 1: What are the top 10 most funded projects from 2010 - 2018.
 SELECT Name, Category, 
 CASE 
 	WHEN MONTH(Deadline) = 2010 THEN Pledged END AS 2010_,
