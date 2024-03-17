@@ -33,7 +33,7 @@ ORDER BY 2 DESC;
 
 -- QUESTION 3: Which months have the highest number of launches and successes?
 SELECT
-MONTH(Lauched) AS Launched_Months,
+MONTH(Launched) AS Launched_Months,
 COUNT(*) AS Total_Launched,
 SUM(CASE WHEN State = "Successful" THEN 1 ELSE 0 END) AS Successful_Projects
 FROM Kickstarter
